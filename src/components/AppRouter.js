@@ -4,7 +4,10 @@ import Home from './Home'
 import { BrowserRouter, Router, Route, Link, Redirect } from "react-router-dom";
 import Header from './Header'
 import About from './About'
-import CV from './CV'
+
+import Search from './search/Search'
+import Timer from './counter/Timer'
+
 import Projects from './Projects'
 import Music from './Music'
 import LogoDesign from './LogoDesign'
@@ -16,10 +19,10 @@ const AppRouter = () => (
       <Header />
       <Route exact path="/" component={Home}/>
       <Route exact path ="/about" render = { () => <About title = 'About me'/> }/>
-      <Route exact path = "/cv" component ={CV}/>
-      <Route path = "/projects" component = {Projects}/>
+      <Route exact path = "/image-search" component ={Search}/>
+      <Route path = "/game-timer" component = {Timer}/>
       <Route path = "/music" component = {Music}/>
-      <Route path = "/logodesign" component = {LogoDesign}/>
+      <Route path='/other' component={() => { window.location = 'https://www.alfyhushairi.com'; return null;} }/>
     </div>
   </BrowserRouter>
 );

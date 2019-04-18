@@ -6,7 +6,8 @@ class About extends Component {
     return (
       <div>
       <h1 className="homeName">Alfy Hushairi</h1>
-      <p className ="homeTitle">INTEGRATION ENGINEER.MUSICIAN.INTERACTION DESIGNER</p>
+      <p className ="homeTitle">INTEGRATION ENGINEER.MUSICIAN.FRONTEND DEVELOPER</p>
+      <h1 className = "aboutMe">About me</h1>
       </div>
     );
   }

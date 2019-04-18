@@ -6,7 +6,7 @@ class Home extends Component {
     return (
       <div className="homeCont">
       <h1 className="homeName">Alfy Hushairi</h1>
-      <p className ="homeTitle">INTEGRATION ENGINEER.MUSICIAN.INTERACTION DESIGNER</p>
+      <p className ="homeTitle">INTEGRATION ENGINEER.MUSICIAN.FRONTEND DEVELOPER</p>
       <img className="homeLogo" src={require('../img/logo.png')} />
       </div>
     );

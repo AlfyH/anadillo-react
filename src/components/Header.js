@@ -9,10 +9,10 @@ class Header extends Component {
       <ul className="mainNav">
         <li><NavLink exact to="/">HOME</NavLink></li>
         <li><NavLink to="/about" >ABOUT ME</NavLink></li>
-        <li><NavLink to="/cv">CV</NavLink></li>
-        <li><NavLink to="/projects">PROJECTS</NavLink></li>
-        <li><NavLink to="/music">MUSIC</NavLink></li>
-        <li><NavLink to="/logodesign">LOGO DESIGN</NavLink></li>
+        <li><NavLink to="/image-search">IMAGE SEARCH</NavLink></li>
+        <li><NavLink to="/game-timer">GAME TIMER</NavLink></li>
+        <li><NavLink to="/random-quote">RANDOM QUOTE</NavLink></li>
+        <li><NavLink to="/other">OTHER SKILLS</NavLink></li>
       </ul>
     );
   }
