@@ -1,0 +1,34 @@
+.mainNav li{
+  display:inline-block;
+  margin: 18px 25px;
+  font-family: Baskerville;
+  font-size: 17px;
+  letter-spacing: -0.4px;
+  color: #ffffff;
+}
+
+.mainNav{
+  background-color: #008390;
+  margin: auto;
+  text-align: center;
+  height:60px;
+}
+
+.homeCont {
+  display: flex;
+  flex-direction: column;
+}
+
+.homeLogo{
+  width: 468px;
+  align-self: center;
+}
+
+.homeName, .homeTitle{
+  text-align: center;
+}
+
+.emailGeneral{
+  text-align: center;
+  width: auto;
+}
