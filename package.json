@@ -2,7 +2,7 @@
   "name": "anadillo-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://www.anadillo.com",
+  "homepage": "https://www.anadillo.com",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",

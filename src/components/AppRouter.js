@@ -15,7 +15,7 @@ const AppRouter = () => (
   <BrowserRouter>
     <div className="router">
       <Header />
-      <Route exact path="/" component={Home}/>
+      <Route exact path="/"  component={Home}/>
       <Route exact path ="/about" render = { () => <About title = 'About me'/> }/>
       <Route exact path = "/image-search" component ={Search}/>
       <Route path = "/game-counter" component = {Timer}/>
