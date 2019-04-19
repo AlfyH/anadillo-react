@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/anadillo-react/precache-manifest.aee5006186d6e8f41c9e82fc24e2fce3.js"
+  "/anadillo-react/precache-manifest.8737f45e0efe8192803bfd19359b9b3c.js"
 );
 
 workbox.clientsClaim();
