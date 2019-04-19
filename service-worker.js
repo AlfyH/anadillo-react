@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/anadillo-react/precache-manifest.8737f45e0efe8192803bfd19359b9b3c.js"
+  "www.anadillo.com/precache-manifest.d1f8e18e34f9667904c40abb9198ed89.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/anadillo-react/index.html", {
+workbox.routing.registerNavigationRoute("www.anadillo.com/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
