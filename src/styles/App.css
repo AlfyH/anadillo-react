@@ -85,9 +85,9 @@ url("./fonts/DancingScript-Regular.otf") format("opentype"),
 
 .socialCont{
   align-self: center;
-  margin: 60px auto;
+  margin: 20px auto;
   width: auto;
-  height: 70px;
+  height: 60px;
 }
 
 .homeName, .homeTitle{
