@@ -7,10 +7,8 @@ import About from './About'
 
 import Search from './search/Search'
 import Timer from './counter/Timer'
+import Quote from './quote/Quote'
 
-import Projects from './Projects'
-import Music from './Music'
-import LogoDesign from './LogoDesign'
 
 
 const AppRouter = () => (
@@ -21,7 +19,7 @@ const AppRouter = () => (
       <Route exact path ="/about" render = { () => <About title = 'About me'/> }/>
       <Route exact path = "/image-search" component ={Search}/>
       <Route path = "/game-counter" component = {Timer}/>
-      <Route path = "/music" component = {Music}/>
+      <Route path = "/quote" component = {Quote}/>
       <Route path='/other' component={() => { window.location = 'https://www.alfyhushairi.com'; return null;} }/>
     </div>
   </BrowserRouter>

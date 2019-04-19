@@ -11,7 +11,7 @@ class Header extends Component {
         <li><NavLink to="/about" >ABOUT ME</NavLink></li>
         <li><NavLink to="/image-search">IMAGE SEARCH</NavLink></li>
         <li><NavLink to="/game-counter">GAME COUNTER</NavLink></li>
-        <li><NavLink to="/random-quote">RANDOM QUOTE</NavLink></li>
+        <li><NavLink to="/quote">RANDOM QUOTE</NavLink></li>
         <li><NavLink to="/other" target="_blank">OTHER SKILLS</NavLink></li>
       </ul>
     );

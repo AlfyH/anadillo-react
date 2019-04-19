@@ -1,3 +1,13 @@
+@font-face {
+font-family: "Dancing Script";
+src: url("./fonts/DancingScript-Regular.otf");
+src:
+
+url("./fonts/DancingScript-Regular.otf") format("opentype"),
+
+}
+
+
 /*----Navigation----*/
 
 .mainNav li{
@@ -48,9 +58,16 @@
 }
 
 .homeTitle{
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  font-family: 'Baskerville';
+  color: grey;
 }
 
+.homeName{
+    font-family: 'Dancing Script';
+    font-size: 50px;
+    margin-bottom: 0px;
+}
 
 .homeLogo{
   width: 468px;
@@ -75,6 +92,7 @@
 
 .homeName, .homeTitle{
   text-align: center;
+
 }
 
 .emailGeneral{
@@ -354,4 +372,19 @@ color: white;
     outline: none;
     transition: background-color 0.2s ease,
                 color 0.2s ease;
+  }
+
+  /*----Random Quote----*/
+
+  .quoteDiv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  /*---General---*/
+
+  p ,h1,h2,h3{
+      font-family: 'Arial'
   }

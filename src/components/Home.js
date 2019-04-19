@@ -7,7 +7,7 @@ class Home extends Component {
       <div className="homeCont">
         <div>
         <h1 className="homeName">Alfy Hushairi</h1>
-        <p className ="homeTitle">INTEGRATION ENGINEER.MUSICIAN.FRONTEND DEVELOPER</p>
+        <p className ="homeTitle">INTEGRATION_ENGINEER . MUSICIAN . FRONTEND_DEVELOPER</p>
         </div>
         <img className="homeLogo" src={require('../img/logo.png')} />
         <div className = "socialCont">
