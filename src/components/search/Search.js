@@ -54,8 +54,6 @@ class Search extends Component {
 
     return (
       <div className="searchDiv">
-      <h1 className="homeName">Alfy Hushairi</h1>
-      <p className ="homeTitle">INTEGRATION ENGINEER.MUSICIAN.FRONTEND DEVELOPER</p>
         <h1>Search images from Flickr</h1>
         <p>A project by Alfy Hushairi</p>
         <header className="searchHeader">

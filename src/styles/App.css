@@ -41,14 +41,36 @@
 
 /*-----Home Page-----*/
 
+
 .homeCont {
   display: flex;
   flex-direction: column;
 }
 
+.homeTitle{
+  margin-bottom: 30px;
+}
+
+
 .homeLogo{
   width: 468px;
   align-self: center;
+}
+
+.socialLogo{
+  width: 80px;
+  margin: 10px;
+}
+
+.socialLogo:hover{
+  transform: scale(1.1);
+}
+
+.socialCont{
+  align-self: center;
+  margin: 60px auto;
+  width: auto;
+  height: 70px;
 }
 
 .homeName, .homeTitle{
@@ -60,10 +82,30 @@
   width: auto;
 }
 
+/*-----About Me-----*/
+
+.aboutPage{
+  text-align: center;
+}
+
+.aboutCont{
+  margin: auto 30vw;
+
+}
+
+.aboutCont > div{
+  display:flex;
+  flex-wrap: wrap;
+  text-align: justify;
+}
+
+
 .aboutMe{
   text-align: center;
   margin-top: 50px;
 }
+
+
 
 /*----Search API----*/
 
@@ -89,6 +131,7 @@
 .searchDiv {
   text-align: center;
 /*  margin-top: 100px; */
+margin-bottom: 40px;
 }
 
 
@@ -105,10 +148,40 @@
 
 /*------Game Counter------*/
 
-.counterHeader{
-  background-color: purple;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+
+.Counter{
+  margin: auto 20vw;
+  margin-top: 30px;
+}
+
+
+.counterDiv{
+  display: flex;
+  background-color: #000000;
+}
+
+.stats {
+  font-weight: normal;
+  width: 100vw;
+  margin: 10px 20vw;
+  font-size: 30px;
+}
+
+.stats td:first-child {
+text-align: left;
+color: white;
+}
+.stats td:last-child {
+text-align: right;
+color: white;
+}
+
+.stopwatch {
+  padding: 15px 10px 5px 10px;
+  background: #f5c301;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .scoreboard {
@@ -159,32 +232,6 @@
     background: none;
   }
 
-.stats,
-.stopwatch {
-  width: 170px;
-}
-
-.stats {
-  margin: 0 0 0 28px;
-  font-weight: normal;
-}
-
-  .stats td:first-child {
-    text-align: right;
-    font-weight: normal;
-    letter-spacing: 2px;
-    font-size: .7em;
-  }
-
-  .stats td:last-child {
-    text-align: left;
-  }
-
-.stopwatch {
-  padding: 15px 10px 5px 10px;
-  margin: -5px -10px -5px 10px;
-  background: #5B45B9;
-}
 
   .stopwatch-time {
     display: block;
@@ -193,8 +240,8 @@
   }
 
   .stopwatch button {
-    margin: 8px 5px;
-    background-color: #44338D;
+    margin: 5px auto;
+    background-color: #000000;
     border-radius: 5px;
     padding: 7px 8px;
     border: none;
@@ -203,6 +250,7 @@
     font-weight: bold;
     text-shadow: none;
     text-transform: uppercase;
+    width: 20vw;
   }
 
   .stopwatch button:hover,
@@ -213,7 +261,7 @@
   }
 
   .stopwatch h2 {
-    font-size: .6em;
+    font-size: 1em;
     margin: 0;
     font-weight: normal;
     letter-spacing: 2px;
@@ -256,10 +304,54 @@
     line-height: 2em;
   }
 
-  .App > .player:last-child{
-    border-radius: 10px;
-  }
-
   button.counter-action.increment{
     border-bottom-right-radius: 10px;
+  }
+
+  .counterForm {
+    display: flex;
+    background-color: #f5c301;
+  }
+
+  .counterForm input[type=text] {
+    flex-grow: 1;
+    border-width: 0 0 1px 0;
+    margin: 15px 10px 15px 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #000000;
+    border-style: none;
+    text-shadow: none;
+    text-transform: uppercase;
+    color: #C7BCF8;
+    letter-spacing: 2px;
+    outline: none;
+  }
+
+  .counterForm input[type=text]::-webkit-input-placeholder{
+    color: #C7BCF8;
+    letter-spacing: 2px;
+  }
+
+  .counterForm input[type=submit] {
+    display: block;
+    font-size: .6em;
+    margin: 15px 15px 15px 0;
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: none;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .counterForm button,
+  input[type=submit] {
+    outline: none;
+    transition: background-color 0.2s ease,
+                color 0.2s ease;
   }

@@ -5,12 +5,10 @@ import PropTypes from 'prop-types'
 
 const Header = ({players,title}) => {
     return (
-      <header className = "counterHeader">
+      <div className = "counterDiv">
       <Stats
       players = {players}/>
-      <h1>{title}</h1>
-      <Stopwatch />
-      </header>
+      </div>
     );
 }
 
@@ -19,8 +17,5 @@ const Header = ({players,title}) => {
     players: PropTypes.arrayOf(PropTypes.object)
   };
 
-  Header.defaultProps = {
-    title: 'Scoreboard'
-  };
 
 export default Header;

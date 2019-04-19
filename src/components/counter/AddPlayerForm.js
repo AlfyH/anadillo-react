@@ -14,7 +14,7 @@ class AddPlayerForm extends Component {
 
   render() {
     return(
-      <form onSubmit = {this.handleSubmit}>
+      <form className= "counterForm" onSubmit = {this.handleSubmit}>
         <input
           type ="text"
           ref = {this.playerInput}

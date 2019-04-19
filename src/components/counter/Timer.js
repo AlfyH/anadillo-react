@@ -3,6 +3,7 @@ import React from 'react';
 import Header from './Header'
 import Player from './Player'
 import AddPlayerForm from './AddPlayerForm'
+import Stopwatch from './Stopwatch'
 
 
 class Timer extends React.Component{
@@ -65,24 +66,30 @@ state = {
 
   render() {
     return (
-      <div className="App">
-        <Header players ={this.state.players}
-        />
-        {/*Add players here*/}
-        {this.state.players.map( (player, index) =>
-          <Player
-          playerName = {player.name}
-          removePlayer={this.handleRemoveplayer}
-          changeScore ={this.handleScoreChange}
-          id = {player.id}
-          score = {player.score}
-          index = {index}
-          key = {player.id.toString()}/>
 
-        )}
-          <AddPlayerForm
-          addPlayer ={this.handleAddPlayer}
+      <div className="Counter">
+        <div className="searchDiv">
+          <h1>Game Counter with Stopwatch</h1>
+          <p>A project by Alfy Hushairi</p>
+        </div>
+          <Header players ={this.state.players}
           />
+          <Stopwatch />
+          {/*Add players here*/}
+          {this.state.players.map( (player, index) =>
+            <Player
+            playerName = {player.name}
+            removePlayer={this.handleRemoveplayer}
+            changeScore ={this.handleScoreChange}
+            id = {player.id}
+            score = {player.score}
+            index = {index}
+            key = {player.id.toString()}/>
+
+          )}
+            <AddPlayerForm
+            addPlayer ={this.handleAddPlayer}
+            />
 
       </div>
     );}

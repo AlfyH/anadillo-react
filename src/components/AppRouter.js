@@ -20,7 +20,7 @@ const AppRouter = () => (
       <Route exact path="/" component={Home}/>
       <Route exact path ="/about" render = { () => <About title = 'About me'/> }/>
       <Route exact path = "/image-search" component ={Search}/>
-      <Route path = "/game-timer" component = {Timer}/>
+      <Route path = "/game-counter" component = {Timer}/>
       <Route path = "/music" component = {Music}/>
       <Route path='/other' component={() => { window.location = 'https://www.alfyhushairi.com'; return null;} }/>
     </div>
