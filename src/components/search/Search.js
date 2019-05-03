@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import GalleryCont from './GalleryCont'
 //import apiKey from '../config.js'
 
-
-
-
 //Photo endpoint to use https://www.flickr.com/services/api/misc.urls.html
 
 class Search extends Component {
